@@ -1,18 +1,16 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <ParentComp></ParentComp>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import { defineComponent } from "@vue/runtime-core";
+
+import ParentComp from "@/views/组件/parentComp.vue";
 
 export default defineComponent({
-  name: 'Home',
+  setup() {},
   components: {
-    HelloWorld,
+    ParentComp,
   },
 });
 </script>
